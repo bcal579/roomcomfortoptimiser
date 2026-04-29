@@ -2,9 +2,14 @@
 Brief description of changes.
 
 ## Acceptance Criteria
-- [X] Criteria 1 description
-- [X] Criteria 2 description
+- [ ] Criteria 1 description
+- [ ] Criteria 2 description
 - [ ] Criteria 3 description
 
+## Checklist
+- [ ] Code follows project style
+- [ ] Tests added/updated
+- [ ] Documentation updated (if needed)
+
 ## Related Issue
-Closes #
+Closes # (if complete)
