@@ -2,9 +2,9 @@
 As a [user], I want to [action], so that [benefit].
 
 ## Acceptance Criteria
-- [ ] Criteria 1
-- [ ] Criteria 2
-- [ ] Criteria 3
+- [ ] Criteria 1 description
+- [ ] Criteria 2 description
+- [ ] Criteria 3 description
 
 ## Reviewer
 @username
