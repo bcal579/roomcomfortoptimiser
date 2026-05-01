@@ -4,9 +4,17 @@ void setup() {
     ; // wait for serial port to connect.
   }
   Serial.println("Smart Room System Initialized.");
+  
+  // Initialize the temperature sensor
+  setupTemperatureSensor();
 }
 
 void loop() {
-  // Main program loop
-  delay(1000);
+  // Read and log the room temperature
+  float currentTemp = readRoomTemperature();
+  Serial.print("Current Room Temperature: ");
+  Serial.print(currentTemp);
+  Serial.println(" C");
+
+  delay(2000); // Wait 2 seconds before next reading
 }
