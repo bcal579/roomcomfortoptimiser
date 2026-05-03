@@ -34,6 +34,9 @@ void setup() {
 
   // Initialize the temperature sensor
   setupTemperatureSensor();
+
+  // Initialize the humidity sensor
+  setupHumiditySensor();
 }
 
 void loop() {
@@ -51,6 +54,15 @@ void loop() {
 
   // Publish temperature to HiveMQ
   publishTemperature(currentTemp);
+
+  // Read and log the room humidity
+  float currentHum = readRoomHumidity();
+  Serial.print("Current Room Humidity: ");
+  Serial.print(currentHum);
+  Serial.println(" %");
+
+  // Publish humidity to HiveMQ
+  publishHumidity(currentHum);
 
   delay(5000); // Wait 5 seconds before next reading
 }

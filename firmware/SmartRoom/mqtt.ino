@@ -107,3 +107,18 @@ void publishTemperature(float temperature) {
     Serial.println("Failed to publish temperature!");
   }
 }
+
+// ----- Publish Humidity -----
+void publishHumidity(float humidity) {
+  char payload[50];
+  snprintf(payload, sizeof(payload), "{\"humidity\": %.2f}", humidity);
+
+  if (mqttClient.publish(TOPIC_HUMIDITY, payload)) {
+    Serial.print("Published to ");
+    Serial.print(TOPIC_HUMIDITY);
+    Serial.print(": ");
+    Serial.println(payload);
+  } else {
+    Serial.println("Failed to publish humidity!");
+  }
+}
