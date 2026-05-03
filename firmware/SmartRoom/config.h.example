@@ -1,0 +1,27 @@
+// ============================================
+// Configuration - WiFi & MQTT Settings
+// ============================================
+// IMPORTANT: Do NOT commit this file with real credentials!
+// Replace the placeholder values with your actual credentials
+// and save this file as config.h (which is git-ignored).
+
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// ----- WiFi Settings -----
+#define WIFI_SSID     "YOUR_WIFI_SSID"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
+
+// ----- HiveMQ MQTT Broker Settings -----
+#define MQTT_BROKER   "YOUR_CLUSTER.s1.eu.hivemq.cloud"
+#define MQTT_PORT     8883    // TLS port for HiveMQ Cloud
+#define MQTT_USER     "YOUR_MQTT_USERNAME"
+#define MQTT_PASSWORD "YOUR_MQTT_PASSWORD"
+
+// ----- MQTT Topics -----
+#define TOPIC_TEMPERATURE "smartroom/temperature"
+
+// ----- Device ID -----
+#define DEVICE_ID "WioTerminal_01"
+
+#endif // CONFIG_H
